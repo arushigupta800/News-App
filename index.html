@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>News App</title>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <!-- header -->
+        <header class="header">
+            <div class="header_container">
+                <div class="logo">
+                    <p>News App</p>
+                </div>
+                <div class="search_ops">
+                  <select class="inp" id="country">
+                    <option value="">Select Country</option>
+                    <option value="in">India</option>
+                    <option value="us">USA</option>
+                    <option value="at">Australia</option>
+                    <!-- <option value="irn">Iraq</option> -->
+                    <option value="pl">Poland</option>
+                    <option value="be">Belgium </option>
+                </select> 
+                <select class="inp" id="category">
+                    <option value="">Select Category</option>
+                    <option value="politics">Politics</option>
+                    <option value="business">Business</option>
+                    <option value="technology">Technology</option>
+                    <option value="health">Health</option>
+                    
+                </select> 
+                <button class="btn" onclick="search()">
+                    Get News
+                </button>
+                </div>
+            </div>
+
+        </header>
+        <!-- https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=0e863b53b4c24314b1dc24182e89fb55 -->
+        <!-- news part -->
+
+        <section class="news" id="news" >
+            <!-- <div class="news_card">
+                <div class="news_img">
+                    <img class="card_img" src="dummy_pic.jpg">
+                </div>
+                <div class="news_detail">
+                    <h1 class="title">Pollution alert in some cities.</h1>
+                    <p class="author">- Arushi Gupta</p>
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pretium ex mattis nunc tempor semper. Nullam et pharetra mi, quis tristique ex.   </p>
+                    <a target="blank">
+                    <button class="btn">Read full Article</button>
+                    </a>
+
+                
+
+                </div>
+             </div> -->
+        </section>
+        <script src="./index.js"></script>
+    </body>
+</html>
